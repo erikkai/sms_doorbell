@@ -13,7 +13,7 @@ This project is intended as a fun way to get started working with TeleSign's SMS
 * 2 jumper cables each with one male and one female end. 
 * Push button - the kind of push button you want looks like this little picture here. It has four prongs. It’s really only two inside, but it looks like four from the outside. You can probably use different kinds of buttons, but this one is easy to wire and work with, so we recommend this one.
 
-[<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/push_button-288x300.png">]
+<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/push_button-288x300.png">
 
 # Raspberry Pi 101 
 
@@ -51,7 +51,7 @@ sudo pip install requests
 
 The rpi.gpio library lets your Pi register when you press a button (provided you wire it correctly), play sounds, and other things involving the two rows of pins on your Pi.  Here’s an up close diagram of the two rows of GPIO pins on your Pi.
 
-[<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/gpio.png">]
+<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/gpio.png">
 
 If you were playing around with your Pi and plugged in any kind of circuits, it’s recommended that you remove all of those, particularly while installing the modules we mentioned. Sometimes power can bleed out into your circuit in unexpected ways and cook parts of your Pi.
 
@@ -90,20 +90,20 @@ Now we set up the circuit on the breadboard.
 
 1. Take the push button, and position it over the big groove down the middle of your breadboard. Arrange it so that two prongs go in on one side of the groove, and two go in on the other side.
 
-[<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/breadboard_bonly.png">]
+<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/breadboard_bonly.png">
 
 2. Take your jumper cables and push the male ends into the board so that one jumper cable is aligned in the same row as one prong from the push button. You only want to do this on one side of the groove. The end result looks like this:
 
-[<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/breadboard_wires.png">]
+<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/breadboard_wires.jpg">
 
 3. Orient your Raspberry pi so it is flush alongside the breadboard. It should be set up so you see two rows of GPIO pins, then the horizontal red line of your breadboard, then the horizontal blue line.
 
 4. Connect the female end of the jumper cable in row 30 on the breadboard (see the number 30 by the jumper cable in the photo above) to the 3rdpin on the Pi (called GND) if you count from the top corner of the Pi. Connect the female end of the jumper cable in the other row (row 28 on the breadboard) to the 6thpin on the Pi if you count from the top corner. This is called pin 18.
-[<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/boardandpi.jpg">]
+<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/boardandpi.jpg">
 
 Here is a diagram labeling the pins and showing the two pins circled: 
 
-[<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/pins_to_use.png">]
+<img src="https://github.com/erikkai/sms_doorbell/blob/master/images/pins_to_use.png">
 
 # Run the Code
 
