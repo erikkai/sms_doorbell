@@ -43,9 +43,11 @@ The code for this project is fairly simple. You may need to download some of the
 
 To add these libraries, open a terminal window and at the command line use:
 
-```sudo pip install python-rpi.gpio
+```
+sudo pip install python-rpi.gpio
 sudo pip install HTTPBasicAuth
 sudo pip install requests
+```
 
 The rpi.gpio library lets your Pi register when you press a button (provided you wire it correctly), play sounds, and other things involving the two rows of pins on your Pi.  Here’s an up close diagram of the two rows of GPIO pins on your Pi.
 
@@ -55,7 +57,9 @@ If you were playing around with your Pi and plugged in any kind of circuits, it�
 
 After you install the modules, open a text file and paste in this code, which is a slight modification on the code sample here – http://razzpisampler.oreilly.com/ch07.html:
 
-```import RPi.GPIO as GPIO
+
+```
+import RPi.GPIO as GPIO
 import time
 from requests.auth import HTTPBasicAuth
 import requests
@@ -70,7 +74,8 @@ while True:
         r = requests.post(url, auth=HTTPBasicAuth(‘Your customer ID goes here', 'Your API key goes here'), data=data, headers=headers)
         print('Button Pressed')
         time.sleep(0.2)
-GPIO.setup(buttonPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)```
+GPIO.setup(buttonPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+```
 
 * Replace the **phone_number** parameter’s value with your entire phone number you want to receive the text message at, including the country code. Do not add any special characters or spaces.
 * Replace ‘**Your customer ID goes here**’ with your **customer ID**.
@@ -104,7 +109,9 @@ Here is a diagram labeling the pins and showing the two pins circled:
 
 Now all you need to do is run the code. Open the terminal window and run your program with the command:
 
-```python sms_doorbell.py```
+```
+python sms_doorbell.py
+```
 
 
 If you saved your file somewhere else, navigate to the directory you have it in, and then run it.
