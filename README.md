@@ -45,7 +45,7 @@ To add these libraries, open a terminal window and at the command line use:
 
 ```sudo pip install python-rpi.gpio
 sudo pip install HTTPBasicAuth
-sudo pip install requests```
+sudo pip install requests
 
 The rpi.gpio library lets your Pi register when you press a button (provided you wire it correctly), play sounds, and other things involving the two rows of pins on your Pi.  Here’s an up close diagram of the two rows of GPIO pins on your Pi.
 
