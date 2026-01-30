@@ -1,6 +1,6 @@
 [![Link Checker](https://github.com/erikkai/sms_doorbell/actions/workflows/link-checker.yml/badge.svg)](https://github.com/erikkai/sms_doorbell/actions/workflows/link-checker.yml)
 
-> **NOTE:** This is a legacy project maintained for historical context. It demonstrates my early work with TeleSign APIs and hardware integration. In some places, links to content are no longer available, and are removed. 
+> **LEGACY PROJECT:** This legacy project is maintained for historical context. It demonstrates my early work with TeleSign APIs and hardware integration. In some places, links to content are no longer available, so they are removed. 
 
 # sms_doorbell
 A repository containing details about how to build your own SMS doorbell using TeleSign's SMS API. 
