@@ -1,5 +1,7 @@
 [![Link Checker](https://github.com/erikkai/sms_doorbell/actions/workflows/link-checker.yml/badge.svg)](https://github.com/erikkai/sms_doorbell/actions/workflows/link-checker.yml)
 
+> **NOTE:** This is a legacy project maintained for historical context. It demonstrates my early work with TeleSign APIs and hardware integration. In some places, links to content are no longer available, and are removed. 
+
 # sms_doorbell
 A repository containing details about how to build your own SMS doorbell using TeleSign's SMS API. 
 
@@ -25,13 +27,17 @@ A Raspberry Pi is a small computer that’s cheap and plugs into a computer moni
 
 If you already have your own Raspberry Pi, you probably won’t need to configure it. If you bought one just for this project, we do recommend the starter kit listed since it comes with everything you’d want to get started and maybe even a little extra. The kit includes cables, a power source, and a WiFi adapter that makes your Pi more portable. You can always plug the Pi directly into your router for internet access, but lots of people keep their routers tucked away and you may not want to sit in the closet with a bunch of shoes just to work on this project. We’ll leave it up to you.
 
-Your kit should include instructions for configuring the Pi, but if you find those lacking, here is a great online tutorial that helps you get your Pi ready for this project: <a href="http://dailylinuxuser.com/2015/03/setting-up-raspberry-pi-2.html">http://dailylinuxuser.com/2015/03/setting-up-raspberry-pi-2.html</a>
+Your kit should include instructions for configuring the Pi, but if you find those lacking, here is a great online tutorial that helps you get your Pi ready for this project: <a href="https://www.raspberrypi.com/documentation/computers/getting-started.html">https://www.raspberrypi.com/documentation/computers/getting-started.html</a>
+
+> **EDITOR'S NOTE:** The link was replaced with a newer, functional one. Newer raspberry pis should still be compatible with this tutorial, but you will need to tweak instructions that refer to outdated versions of Python (Python 2).
 
 You will also want to be able to use pip. If your Raspberry Pi does not have it installed by default, you can use the command:
 
 `sudo apt-get install python-pip` 
 
-at the command line to get the Python 2 version of pip installed. There’s more details about what’s available here: https://www.raspberrypi.org/documentation/linux/software/python.md
+at the command line to get the Python 2 version of pip installed. There’s more details about what’s available here: -LINK REMOVED- 
+
+> **EDITOR'S NOTE:** Use of Python 2 is no longer supported and Raspberry Pi discourages its use.
 
 When you are done, you will be able to: 
 
@@ -69,7 +75,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 url = 'https://rest-ww.telesign.com/v1/messaging'
 headers = {'Accept' : 'application/json', 'Content-Type' : 'application/x-www-form-urlencoded'}
-data = {'phone_number': 'Your phone number goes here.', ‘message_type’:’ARN’, ‘message': 'Someone is at the door.'}
+data = {'phone_number': 'Your phone number goes here.', 'message_type':'ARN', 'message': 'Someone is at the door.'}
 while True:
     input_state = GPIO.input(18)
     if input_state == False:
