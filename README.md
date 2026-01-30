@@ -121,7 +121,6 @@ Now all you need to do is run the code. Open the terminal window and run your pr
 python sms_doorbell.py
 ```
 
-
 If you saved your file somewhere else, navigate to the directory you have it in, and then run it.
 
 After the code is running, press the button on the breadboard. You should get a note on the terminal window that says ‘Button Pressed’ and a text message telling you someone is at the door!

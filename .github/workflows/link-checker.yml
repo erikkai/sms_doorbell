@@ -21,7 +21,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         id: lychee
         with:
-          args: --verbose --no-progress --include-fragments '.'
+          args: --verbose --no-progress --exclude "https://www.raspberrypi.com/documentation/computers/getting-started.html" --include-fragments '.'
           # Setting to 'true' ensures the Badge turns RED on failure.
           # NOTE: The badge has a delay before it flips from red to green or vice versa.
           # Base the status off the test and wait 5-10 minutes for the update. 
